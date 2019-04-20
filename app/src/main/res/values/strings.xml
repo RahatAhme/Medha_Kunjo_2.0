@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Medha_Kunjo2.0</string>
+    <string name="titleText">Welcome To</string>
+    <string name="description">A MCQ based appliction to improve your general knowledege and IQ</string>
+    <string name="title_activity_quess">QuessActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="catTitle">Select suitable category and strength of question</string>
+</resources>

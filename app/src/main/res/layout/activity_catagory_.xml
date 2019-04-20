@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    tools:context=".Catagory_Activity">
+
+    <TextView
+        android:id="@+id/category_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/catTitle"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:textColor="#000"
+        android:background="@drawable/textview_deign"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/category_title_tv"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:id="@+id/linear1">
+        <TextView
+            android:id="@+id/cat_tv_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category : "
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/category_title_tv"
+            />
+        <Spinner
+            android:id="@+id/cat_spiner_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_below="@id/category_title_tv"
+            android:layout_alignRight="@id/cat_tv_ID"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear1"
+        android:id="@+id/linear2"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/strenth_tv_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strength : "
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/category_title_tv"
+            />
+        <Spinner
+            android:id="@+id/strength_spiner_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_below="@id/cat_spiner_ID"
+            android:layout_alignRight="@id/cat_tv_ID"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:layout_below="@id/linear2"
+            android:onClick="onNextClicked"
+            android:text="Start Quiz"/>
+
+
+</RelativeLayout>

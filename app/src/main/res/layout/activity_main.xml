@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    tools:context=".Welcome_Activity">
+
+    <TextView
+        android:id="@+id/title_tv_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/titleText"
+        android:textSize="30sp"
+        android:textColor="#C51111"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/name_TV_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_tv_ID"
+        android:fontFamily="cursive"
+        android:layout_marginTop="10dp"
+        android:text="MEDHA KUNJO"
+        android:textColor="#1E37C4"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/description_tv_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textAlignment="center"
+        android:textColor="#F7BD15"
+        android:textSize="15sp"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/name_TV_ID"
+        />
+
+
+
+</RelativeLayout>
